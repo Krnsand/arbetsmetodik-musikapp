@@ -1,17 +1,19 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background: #ffffff;
   margin: 0;
   padding: 20px;
 }
 
 .container {
-  background: white;
+  background: rgb(133, 176, 133);
+  color: rgb(39, 48, 39);
+  text-shadow: #ffffff;
   padding: 20px;
   max-width: 600px;
   margin: auto;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(36, 108, 45, 0.1);
 }
 
 input,
@@ -19,6 +21,17 @@ button {
   display: block;
   margin: 10px 0;
   padding: 10px;
+  border-radius: 8px;
   width: 100%;
   box-sizing: border-box;
+}
+
+.create-button {
+  background-color: rgb(92, 122, 92);
+  color: white;
+}
+
+.create-button:hover {
+  background-color: rgb(173, 206, 173);
+  color: black;
 }
