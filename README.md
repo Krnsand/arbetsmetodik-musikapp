@@ -46,12 +46,9 @@ git push origin development
 
 Om två grenar har ändrat samma rader i samma fil uppstår en konflikt. Git markerar dessa automatiskt:
 
-<<<<<<< HEAD
-Kod från den gren du står i
-=======
-Kod från den gren du försöker merga in
+![Conflict](https://github.com/Krnsand/arbetsmetodik-musikapp/blob/development/images/conflict.png)
 
-> > > > > > > features
+![Merge-editor](https://github.com/Krnsand/arbetsmetodik-musikapp/blob/development/images/merge-editor.png)
 
 Så här löser du det:
 
