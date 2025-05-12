@@ -33,7 +33,7 @@ function visaSpellistor() {
     const div = document.createElement('div');
     div.innerHTML = `
       <h3>${i + 1}. ${s.namn}</h3>
-      <p><strong>Genre:</strong> ${s.genre}</p>
+      <p><italic>Genre:</strong> ${s.genre}</p>
       <p><strong>Artist:</strong> ${s.artist}</p>
       <p><strong>Låtar:</strong> ${s.låtar.join(', ')}</p>
       <hr>
