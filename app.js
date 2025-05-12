@@ -33,7 +33,7 @@ function displayPlaylists() {
     const div = document.createElement('div');
     div.innerHTML = `
       <h3>${i + 1}. ${p.name}</h3>
-      <p><strong>Genre:</strong> ${p.genre}</p>
+      <p><bold>Genre:</strong> ${p.genre}</p>
       <p><strong>Artist:</strong> ${p.artist}</p>
       <p><strong>Songs:</strong> ${p.songs.join(', ')}</p>
       <hr>
