@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Musikapp</title>
+    <title>Music App</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Skapa spellista</h1>
+      <h1>Create Playlist</h1>
 
-      <form id="spellistaForm">
-        <input type="text" id="namn" placeholder="Namn på spellista" required />
+      <form id="playlistForm">
+        <input type="text" id="name" placeholder="Playlist Name" required />
         <input type="text" id="genre" placeholder="Genre" required />
         <input type="text" id="artist" placeholder="Artist" required />
-        <input type="text" id="låtar" placeholder="Låtar" required />
-        <button type="submit" class="create-button">Skapa</button>
+        <input type="text" id="songs" placeholder="Songs" required />
+        <button type="submit" class="create-button">Create List</button>
       </form>
 
-      <h2>Spellistor</h2>
-      <div id="spellistaContainer"></div>
+      <h2>Playlists</h2>
+      <div id="playlistContainer"></div>
     </div>
 
     <script src="app.js"></script>
