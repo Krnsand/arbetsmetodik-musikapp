@@ -1,41 +1,41 @@
-const spellistor = [];
+const playlists = [];
 
 document
-  .getElementById('spellistaForm')
+  .getElementById('playlistForm')
   .addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const namn = document.getElementById('namn').value.trim();
+    const name = document.getElementById('name').value.trim();
     const genre = document.getElementById('genre').value.trim();
     const artist = document.getElementById('artist').value.trim();
-    const låtar = document.getElementById('låtar').value.trim().split(',');
+    const songs = document.getElementById('songs').value.trim().split(',');
 
-    skapaSpellista(namn, genre, artist, låtar);
-    visaSpellistor();
+    createPlaylist(name, genre, artist, songs);
+    displayPlaylists();
     this.reset();
   });
 
-function skapaSpellista(namn, genre, artist, låtar) {
-  const spellista = {
-    namn,
+function createPlaylist(name, genre, artist, songs) {
+  const playlist = {
+    name,
     genre,
     artist,
-    låtar: låtar.map((låt) => låt.trim()),
+    songs: songs.map((song) => song.trim()),
   };
-  spellistor.push(spellista);
+  playlists.push(playlist);
 }
 
-function visaSpellistor() {
-  const container = document.getElementById('spellistaContainer');
+function displayPlaylists() {
+  const container = document.getElementById('playlistContainer');
   container.innerHTML = '';
 
-  spellistor.forEach((s, i) => {
+  playlists.forEach((p, i) => {
     const div = document.createElement('div');
     div.innerHTML = `
-      <h3>${i + 1}. ${s.namn}</h3>
-      <p><strong>Genre:</strong> ${s.genre}</p>
-      <p><strong>Artist:</strong> ${s.artist}</p>
-      <p><strong>Låtar:</strong> ${s.låtar.join(', ')}</p>
+      <h3>${i + 1}. ${p.name}</h3>
+      <p><strong>Genre:</strong> ${p.genre}</p>
+      <p><strong>Artist:</strong> ${p.artist}</p>
+      <p><strong>Songs:</strong> ${p.songs.join(', ')}</p>
       <hr>
     `;
     container.appendChild(div);
